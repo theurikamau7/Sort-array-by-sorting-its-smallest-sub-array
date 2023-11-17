@@ -22,11 +22,11 @@ def find_index_of_subarray(arr):
     min_val = min(arr[left:right + 1])
     max_val = max(arr[left:right + 1])
 
-    # Extend the left boundary
+    # Extend left
     while left >= 0 and arr[left] > min_val:
         left -= 1
 
-    # Extend the right boundary
+    # Extend right
     while right < n and arr[right] < max_val:
         right += 1
 
