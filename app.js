@@ -22,7 +22,7 @@ function findIndexOfSubArray (arr) {
         right -= 1;
     }
 
-    // Find the minimum and maximum values within unsorted subarray
+    // Find the minimum and maximum values within subarray
     const minVal = Math.min(...arr.slice(left, right + 1));
     const maxVal = Math.max(...arr.slice(left, right + 1));
 
